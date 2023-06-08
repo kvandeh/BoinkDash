@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#myCanvas {
+  border: 1px solid black;
+}
+
+#counter {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+#high-score {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
