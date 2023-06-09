@@ -1,14 +1,23 @@
-// Helper function to generate random speed for velocity
+var counter = 0;
+var dx = getRandomSpeed();
+var dy = getRandomSpeed();
+
+var rectWidth = 100;
+var rectHeight = 80;
+
+var currentColor = getRandomColor();
+var faceExpression = "(•◡•)";
+
 function getRandomSpeed() {
-    return (Math.random() - 0.5) * 4; // Adjust the multiplier for desired speed range
+    return (Math.random() - 0.5) * 1.025**counter;
 }
 
-// Helper function to generate a random color
 function getRandomColor() {
-    var letters = "0123456789ABCDEF";
+    var letters = "ABCDEF";
     var color = "#";
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+    for (var i = 0; i < 4; i++) {
+        color += letters[Math.floor(Math.random() * 6)];
     }
+    
     return color;
 }
