@@ -47,8 +47,8 @@ content {
 
   display: none;
 
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   position: absolute;
 
   top: 225;
@@ -59,41 +59,22 @@ content {
 }
 
 #eyes {
-  width: calc(80% - 10px);
+  width: 100%;
+  height: 100%;
   position: absolute;
-  left: calc(10% + 10px);
-  top: calc(10% + 10px);
-  height: calc(20% - 10px);
-  z-index: 5;
+  top: 0;
+  left: 0;
+
+  font-size: 50px;
+  font-weight: 2000;
+
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
 
   display: flex;
-  justify-content: space-between;
-}
-
-#eyes .eye {
-  background-color: #000;
-  height: 100%;
-  aspect-ratio: 1 / 1;
-  transform-origin: 50% 50%;
-
-  transition: 500ms linear;
-}
-
-.eyeBack {
-  width: 80%;
-  position: absolute;
-  left: 10%;
-  top: 10%;
-  height: 20%;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-.eyeBack .eye {
-  background-color: #FFF;
-  height: 100%;
-  aspect-ratio: 1 / 1;
+  justify-content: center;
+  align-items: center;
 }
 
 #score {
@@ -109,4 +90,8 @@ content {
   position: absolute;
   height: 100%;
   width: 100%;
+
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
 }
