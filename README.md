@@ -5,6 +5,7 @@ Informatica project van:
 
 # Prequisities
 ## Flask Async
-Run on server to install:```
+Run on server to install:
+```
 pip install flask["async"]
 ```
